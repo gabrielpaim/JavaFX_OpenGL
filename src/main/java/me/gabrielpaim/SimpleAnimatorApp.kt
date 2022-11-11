@@ -1,4 +1,4 @@
-package vet.inpulse
+package me.gabrielpaim
 
 import com.jogamp.newt.Display
 import com.jogamp.newt.NewtFactory
@@ -23,10 +23,10 @@ import javafx.scene.Scene
 import javafx.stage.Stage
 
 fun main() {
-    LauncherImpl.launchApplication(App::class.java, emptyArray())
+    LauncherImpl.launchApplication(SimpleAnimatorApp::class.java, emptyArray())
 }
 
-class App : Application() {
+class SimpleAnimatorApp : Application() {
 
     private var animator: Animator? = null
 
